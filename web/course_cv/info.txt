@@ -1,0 +1,252 @@
+Heading: h1 to h6
+Horizontal rule: <hr> must not have end tag
+
+Elements and attributes:
+-------------------------
+Example: <hr size="3">
+hr -> element
+size="3" -> attribute
+
+Center:
+-------
+<center>
+<p> Hello </p>
+Other stuff
+</center>
+
+Comment:
+--------
+<!-- -->
+
+Meta:
+-----
+Describes metadata for example description, keywords, author etc.
+Description is written below hyperlink in search engines
+
+em and strong:
+---------
+Emphasis and bolding by strong
+Emphasize by italicising tag
+
+list:
+-----
+ul - unordered list
+ol - ordered list
+
+image:
+------
+<img src="" alt="">
+alt text for image
+
+hyperlink:
+----------
+a tag
+<a href='#' target='_self'>
+_self -> same tab
+_blank -> new tab
+
+table:
+------
+thead -> table header
+tbody -> table body
+tfoot -> table footer
+tr -> row
+td -> data
+
+Naming via Class:
+----------------
+When you want to name multiple items (element)
+
+Naming via id:
+--------------
+When you want to name single element
+
+Naming via name:
+---------------
+To get various fields of a form, name is given to each field
+
+Form:
+-----
+text message is done by <textarea name="name" rows="10" cols="20">
+value: default value which will be displayed in the element on page load
+
+Actions of form:
+----------------
+mailto: Will add every thing you entered to email
+syntax:
+action="mailto:abcd@gmail.com" method="post" enctype="text/plain"
+
+Border-style:
+-------------
+The border-style property may be specified using one, two, three, or four values.
+
+1. When one value is specified, it applies the same style to all four sides.
+2. When two values are specified, the first style applies to the top and bottom, the second to the left and right.
+3. When three values are specified, the first style applies to the top, the second to the left and right, the third to the bottom.
+4. When four values are specified, the styles apply to the top, right, bottom, and left in that order (clockwise).
+
+
+Order of importance of style:
+----------------------------
+1. Element.style (inline css)
+2. Internal css (using style tag in html doc only)
+3. External css (using link to external css file)
+
+CSS Syntax:
+----------
+selector {property:value;}
+
+class selector:
+---------------
+.class_name {}
+
+id selector:
+------------
+#id_name {}
+
+More weightage given to specific selectors, for example id selector > class selector > tag selector
+
+/*1 em = 16 px*/
+
+Element with multiple classes:
+------------------------------
+class = "class1 class2"
+=> Both class1 and class2
+
+*** Percentages are not supported in borders ***
+
+Pseudo classes:
+--------------
+Used to define a special state of an element. For eg. hover
+
+Padding:
+-------
+Space between element and border
+The CSS padding properties are used to generate space around an element's content, inside of any defined borders.
+padding: 25px 50px 75px 100px;
+top padding is 25px
+right padding is 50px
+bottom padding is 75px
+left padding is 100px
+
+Margin:
+-------
+Space between *border* of one element with *border* of another element
+The CSS margin properties are used to create space around elements, outside of any defined borders.
+margin: 25px 50px 75px 100px;
+top margin is 25px
+right margin is 50px
+bottom margin is 75px
+left margin is 100px
+
+Favicon:
+--------
+The icon on top of website
+<link rel="icon" href="images/tf.png" type="image/x-icon">
+
+Div tag:
+-------
+Divide content on website
+
+Border-width:
+-------------
+{ border-width: 0px 10px 20px 30px; }
+Top, right, bottom, left
+
+border:
+------
+border: solid 20px;
+=> solid border with 20px on all sides
+
+Box model:
+---------
+Element -> padding -> border -> margin
+
+Block level elements:
+--------------
+A block-level element always starts on a new line, and the browsers automatically add some space (a margin) before and after the element.
+A block-level element always takes up the full width available (stretches out to the left and right as far as it can).
+Width can be changed, but still don't allow any other element to sit in the same line.
+Take up whole width of screen => block display
+like <p>, headers (<h1> to <h6>), <div>, lists(<ol>, <ul>, <li>), <form>
+
+
+Inline elements:
+---------------
+An inline element does not start on a new line.
+An inline element only takes up as much width as necessary.
+Width can't be changed. It always allows other elements to sit in the same line as it is.
+Only takes as much space as required and not extra space.
+For eg <span>, <img>, <a>
+
+<span>:
+-------
+Inline display element
+
+
+***We can change display property of elements***
+For eg if p {display:inline;} => all paragraphs will be inline rather than block
+
+*** If you want elements to be inline as well as change their width, choose display:inline-block; ****
+
+*** If you want to hide an element, there are two ways ***:
+1. display: none;
+   -------------
+   It will hide the element and treat as if it doesn't exist. i.e, it removes the element.
+2. visibility: hidden;
+   -------------------
+   It will hide the element but leave the space for it, i.e. it will not change the layout of the document
+   
+** Children sit on parents **
+<div> <h1> </h1> </div> => h1 is more towards the user than the div. i.e, it sits on top of div
+
+Position:
+---------
+1. Static: Elements stuck to html position
+2. Relative: Relative to position where it used to be earlier. For e.g., img { position: relative; left: 30px;}
+=> It will be moved by 30px away from where its left edge used to be earlier.
+It will not effect layout/position of other elements
+If left: 30px => moved by 30px to right.
+If top: 30px => moved by 30px to bottom.
+i.e., it introduces a margin
+It will not effect the positioning of any other element.
+
+3. Absolute: Change position relative to parent.
+   For e.g, img{ position:absolute; right:30px;} => image will get placed 30px away from right border.
+   It will effect the position of other elements.
+4. Fixed: Element will not move despite scrolling.
+
+Center elements:
+---------------
+1. text-align: center; in container/ parent element will center all elements inside it, which doesn't have a width set.
+2. If width of an element is set: Then use auto value of margin. For eg,
+
+In order for an element to be at absolute position, we must have position of its parent to be relative, otherwise it will be relative to body.
+
+Font styling:
+-------------
+font-family: member, family;
+Will display member of the font family family.
+font-family: memb1, memb2, memb3, family;
+=> Decreasing order of priority
+   
+For font-size: Use %age or em rather than absolute values.
+** 1em = 16px = 100% **
+1em is relative to font size in parent.
+To inherit font size from root rather than parent, use rem.
+
+line-height:
+Specifies space between different lines.
+Default: 1
+Recommended: 1.6
+
+text-align:
+aligns text as well as image
+
+***To resize image:
+-------------------
+Change width of image and not height
+
+Float:
+-----
+The float CSS property places an element on the left or right side of its container, allowing text and inline elements to wrap around it. The element is removed from the normal flow of the page, though still remaining a part of the flow

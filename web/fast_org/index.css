@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif&display=swap');
+
+:root {
+    --font-family: 'Roboto Serif', serif;
+
+    --color-bg: #040C18;
+    --color-footer: #031B34;
+    --color-blog: #042c54;
+    --color-text: #525557;
+    --color-subtext: #FF8A71;
+    --color-secondary: #08121c;
+}

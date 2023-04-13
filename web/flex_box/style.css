@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    /* flex-direction: row-reverse; */
+    /* flex-direction used to specify main axis
+    The axis perpendicular to main axis is cross axis */
+    justify-content: center;
+    /*Justify content used to align items along main axis*/
+    background-color: #cacaca;
+    padding: 10px;
+    margin: 50px;
+    /*Align items used to align items alogn cross axis*/
+    align-items: center;
+}
+
+.item {
+    background-color: #ff0037;
+    color: #fff;
+    font-size: 35px;
+    padding: 20px;
+    margin: 10px;
+    flex: 1;
+    /*All flex items will occupy maximum space in flex box*/
+}
+
+.items-1 {
+    /* order: 3; */
+}
+
+.items-2 {
+    /* order: 4; */
+    flex: 2;
+}
+
+.items-3 {
+    /* height: 150px; */
+    /* order: 0; */
+    flex: 3;
+    /* flex-grow = n means n times bigger than other flex-items*/
+    /* flex: flex-grow | flex-shrink | flex-basis */
+}
+
+.items-4 {
+    /* align-self: last baseline; */
+    /*align self used to align one item along cross axis*/
+    /* order: 1; */
+    /* align-self: stretch; */
+}
+.items-5 {
+    /* order: 2; */
+}

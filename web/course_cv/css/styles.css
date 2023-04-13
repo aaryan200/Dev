@@ -1,0 +1,196 @@
+/***********************Tag Selectors***********************/
+
+body {
+    /* font-family: "Open Sans", sans-serif; */
+    /* font-family: Helvetica Neue,Helvetica,Arial,sans-serif; Sequence of font families in decreasing priority */
+    color: #2d3a38;
+    background-color: #D6E4E5;
+    font-family: 'Google Sans', sans-serif;
+    margin: 0;
+    text-align: center;
+}
+
+div {
+    margin: 0;
+}
+
+h1 {
+    color: #66BFBF;
+    font-family: 'Corinthia', cursive;
+    font-size: 5.625rem;
+    margin: 50px auto 0px auto;
+}
+
+h2 {
+    color: #56c1c1;
+    font-size: 2rem;
+    margin: 0;
+}
+
+h3 {
+    color: #11999E;
+}
+
+hr {
+    margin: 60px auto 60px auto;
+    border-style: none;
+    border-top-style: dotted;
+    width: 5%;
+    border-width: 10px;
+    border-color: #abb6b6;
+}
+
+p {
+    margin: 0;
+}
+
+/***********************Class Selectors***********************/
+
+.small-desc {
+    color: #66BFBF;
+    font-size: 1.575rem;
+}
+
+.top {
+    background-color: #D6E4E5;
+    position: relative;
+    line-height: 1.6;
+    padding-top: 100px;
+}
+
+.middle {
+    background-color: #D6E4E5;
+    margin: 100px 0 60px 0;
+    position: relative;
+}
+
+.bottom {
+    position: relative;
+    height: 150px;
+    background-color: #66BFBF;
+}
+
+.pro {
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+.cloud {
+    position: absolute;
+    background: url(/web/20180901170713im_/http://seanhalpin.io/assets/img/ui/cloud.svg) top left no-repeat;
+    width: 150px;
+    height: 45px;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    z-index: 980;
+}
+
+.bottom-cloud {
+    position: absolute;
+    left: -6em;
+    bottom: 2em;
+}
+
+.top-cloud {
+    position: absolute;
+    right: 22%;
+    top: 7.7%;
+}
+
+.profile {
+    line-height: 2;
+}
+
+.profile-img {
+    width: 18%;
+}
+
+.profile-desc {
+    margin: 0 auto;
+    width: 25%;
+}
+
+.skill-row {
+    width: 50%;
+    margin: 100px auto 100px auto;
+    text-align: left;
+    line-height: 2;
+}
+
+.code-img {
+    width: 25%;
+    float: left;
+    margin-right: 30px;
+}
+
+.webd-img {
+    width: 25%;
+    float: right;
+    /*If clear:right, it will not wrap around anything*/
+    margin-left: 30px;
+}
+
+/* .skill {
+    display: inline-block;
+}
+
+.skill-desc {
+    display: inline-block;
+} */
+
+.btn {
+    background: #3498db;
+    background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+    background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+    background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+    background-image: -o-linear-gradient(top, #3498db, #2980b9);
+    background-image: linear-gradient(to bottom, #3498db, #2980b9);
+    -webkit-border-radius: 12;
+    -moz-border-radius: 12;
+    border-radius: 12px;
+    font-family: 'Google Sans', sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #3cb0fd;
+    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    text-decoration: none;
+}
+
+.contact-me-desc {
+    line-height: 1.6;
+    margin: 0 auto;
+    width: 30%;
+}
+
+.footer-link {
+    color: #11999E;
+    font-size: 105%;
+    position: relative;
+    top: 30px;
+    padding: 10px;
+    /* margin: 50px 20px 50px 20px; */
+    text-decoration: none;
+    line-height: 2;
+}
+
+.footer-link:hover {
+    color: #EAF6F6;
+}
+
+/***********************Id Selectors***********************/
+
+#copyright {
+    color: #EAF6F6;
+    position: relative;
+    top: 50px;
+    font-size: 0.75rem;
+}

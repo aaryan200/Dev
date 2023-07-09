@@ -1,0 +1,6 @@
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr); // this means there are 5 columns with each having an width equal to 1 full row
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); // this means there are "auto" number of columns, with minimum width of 300px
+	// and maximum width of 1 full row.
+}

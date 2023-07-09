@@ -1,0 +1,2 @@
+1. Make a chrome extension so that whenever i open stackoverflow, it removes the cookies element
+2. Get the data from a browser that which site is suggested when a letter is typed on search bar

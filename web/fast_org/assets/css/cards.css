@@ -1,0 +1,132 @@
+.fast__cards_section {
+    position: relative;
+    font-family: var(--font-family);
+    margin-top: 10px;
+    padding-bottom: 63px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.fast__cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.fast__card {
+    min-width: 300px;
+    width: 360px;
+    height: 300px;
+    background-color: #4c5871;
+
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+    align-items: center;
+    box-shadow: 0 0 4px 0 black;
+    cursor: pointer;
+}
+
+.fast__card:hover > .fast__card_top {
+    background-size: 110% auto;
+    filter: brightness(80%);
+}
+
+.fast__card_top {
+    width: 100%;
+    height: 114px;
+    background-size: 100% auto;
+    background-position: center center;
+    transition: all 0.6s ease-in-out;
+}
+
+.fast__card img {
+    width: 100%;
+    max-height: 114px;
+    
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 2;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fast__card_bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 90%;
+}
+
+.fast__card_bottom-heading p {
+    font-size: 23px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.fast__card_bottom-content p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.4;
+    color: #fff;
+}
+
+#cards__membership {
+    background-color: #167c9d;
+}
+
+#cards__membership .fast__card_top {
+    background-image: url('../imgs/img_10_portrait-768x1024.jpg');
+}
+
+#cards__report {
+    background-color: #ee1920;
+}
+
+#cards__report .fast__card_top {
+    background-image: url('../imgs/hacker-working-darkness-768x432.jpg');
+}
+
+#cards__legal {
+    background-color: #139453;
+}
+
+#cards__legal .fast__card_top {
+    background-image: url('../imgs/card_3.jpg');
+}
+
+/* .fast__cards_bottom_background::before, */
+.fast__cards_bottom_background::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+    height: 249px;
+    width: 100%;
+    z-index: -2;
+    background-color: #dbdddd;
+}
+
+@media (max-width: 1160px) {
+    .fast__cards_bottom_background, .fast__cards_bottom_background::after {
+        display: none;
+    }
+    .fast__cards_section {
+        background-color: #dbdddd;
+        padding-bottom: 0;
+    }
+}
+
+@media (max-width: 390px) {
+    .fast__cards {
+        gap: 20px;
+    }
+    .fast__card {
+        width: 100%;
+    }
+}

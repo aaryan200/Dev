@@ -5,6 +5,8 @@
 //variables declared with var keyword are hoisted (initialized with undefined before the code is run) which means they are accessible in their enclosing scope even before they are declared
 
 //let variables are not initialized until their definition is evaluated. Accessing them before the initialization results in a ReferenceError
+var a = -1 % 3;
+console.log(a);
 var nam="Aaryan";
 console.log(nam);
 let sec_nam="Kaushik";

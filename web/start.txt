@@ -1,0 +1,9 @@
+npm create vite@latest
+ReactJS
+JavaScript + SWC
+
+
+// To create npm project
+npm init
+npm i <dependencies>
+npm i --save-dev <development_only_dependencies>

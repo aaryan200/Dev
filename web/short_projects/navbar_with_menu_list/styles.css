@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-image: url('./images/bg_1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+a {
+    transition: 0.3s all;
+}
+
+.header {
+    padding: 20px 0;
+    background-color: rgb(54, 54, 54);
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.navbar {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+}
+
+ul { 
+    list-style: none;
+}
+
+.logo {
+    margin-right: 30px;
+}
+
+.logo img {
+    width: 80px;
+}
+
+.header .main-menu {
+    display: flex;
+}
+
+.header .main-menu li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Kanit', sans-serif;
+    font-size: 18px;
+    padding: 10px 20px;
+}
+
+.header .main-menu li {
+    position: relative;
+}
+
+.header .main-menu li .sub-menu {
+    position: absolute;
+    width: 160px;
+    background-color: rgb(54, 54, 54);
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.3s all;
+}
+
+.header .main-menu li .sub-menu li a {
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+}
+
+.main-menu li:hover > a{
+    color: orange;
+}
+
+.main-menu li:hover .sub-menu {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.sub-menu li:hover a {
+    background-color: orange;
+    color: #fff;
+}
+
+.common-button a {
+    padding: 10px 30px;
+    border-radius: 40px;
+    font-family: 'Kanit', sans-serif;
+    font-size: 22px;
+    color: #fff;
+    border: 1px solid orange;
+    text-decoration: none;
+}
+
+.common-button a:hover {
+    background-color: orange;
+    color: #fff;
+}
+
+.navbar-toggle-button {
+    position: absolute;
+    top: 3.2rem;
+    right: 4.5rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.navbar-toggle-button .bar {
+    height: 4px;
+    width: 100%;
+    background-color: #ccc;
+    border-radius: 10px;
+}
+
+.toggle-navbar {
+    display: none;
+}
+
+.toggle-navbar .toggle-menu li a {
+    display: block;
+    text-align: left;
+    padding: 0.75rem 1.75rem;
+    background-color: rgb(54, 54, 54);
+    text-decoration: none;
+    font-family: 'Kanit', sans-serif;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.toggle-navbar .toggle-menu li a:hover {
+    background-color: orange;
+}
+
+.toggle-navbar .toggle-common-button {
+    margin-top: 0.75rem;
+}
+
+.toggle-navbar .toggle-common-button a{
+    padding: 5px 20px;
+    border-radius: 30px;
+    font-family: 'Kanit', sans-serif;
+    font-size: 20px;
+    color: #fff;
+    border: 1px solid orange;
+    text-decoration: none;
+}
+
+.toggle-navbar .toggle-common-button a:hover {
+    background-color: orange;
+}
+
+@media (max-width: 900px) {
+    .container {
+        padding: 0;
+    }
+}
+
+@media (max-width: 820px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .header .main-menu {
+        display: none;
+    }
+    .logo {
+        margin-right: 0;
+        margin-left: 2rem;
+    }
+    .common-button {
+        /* margin-right: 8.5rem; */
+        position: absolute;
+        right: 8.5rem;
+        top: 2.75rem;
+    }
+    .navbar-toggle-button {
+        display: flex;
+    }
+    .toggle-navbar {
+        /* display: flex; */
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+        justify-content: center;
+        align-items: center;
+    }
+    .toggle-navbar .toggle-common-button {
+        display: none !important;
+    }
+    .toggle-navbar.active {
+        display: flex;
+        width: 100%;
+    }
+    .toggle-navbar.active > .toggle-menu {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .logo {
+        margin-left: 2rem;
+    }
+    .logo img {
+        width: 70px;
+    }
+    .common-button {
+        display: none;
+    }
+    .navbar-toggle-button {
+        right: 2.5rem;
+    }
+    .navbar-toggle-button {
+        display: flex;
+    }
+    .toggle-navbar {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .toggle-navbar .toggle-common-button {
+        display: block !important;
+    }
+    .toggle-navbar.active {
+        display: flex;
+        width: 100%;
+    }
+    .toggle-navbar.active > .toggle-menu {
+        width: 100%;
+    }
+}

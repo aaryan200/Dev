@@ -1,0 +1,29 @@
+* {
+    font-family: montserrat, arial, verdana;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #333;
+    border-radius: .5rem;
+    padding: .5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.25rem;
+}
+
+.form-group > label {
+    font-weight: bold;
+    font-size: 0.8em;
+    color: #333;
+}
+
+.form-group > input {
+    border: 1px solid #333;
+    border-radius: 0.25em;
+    font-size: 1rem;
+    padding: 0.25rem;
+}

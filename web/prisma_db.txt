@@ -1,0 +1,5 @@
+when changes made in schema.prisma
+npx prisma migrate dev
+
+to seed the database:
+npx prisma db seed

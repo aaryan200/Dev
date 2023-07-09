@@ -6,7 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fast | Home</title>
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/welcome.css">
+    <link rel="stylesheet" href="assets/css/cards.css">
+    <link rel="stylesheet" href="assets/css/news.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/slider.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="shortcut icon" href="./assets/imgs/favicon.png" type="image/x-icon">
+    <script src="./assets/js/swiper-bundle.min.js" defer></script>
+    <script src="assets/js/script.js" defer></script>
 </head>
 <body>
     <div class="fast__navbar">
@@ -15,6 +26,11 @@
                 <img src="assets/imgs/logo_600.png" alt="logo">
             </a>
         </div>
+        <div class="fast__navbar-toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
         <div class="fast__navbar_links">
             <p><a href="#about">About Us</a></p>
             <p><a href="#membership">Membership</a></p>
@@ -22,13 +38,212 @@
             <p><a href="#news">News</a></p>
         </div>
         <div class="fast__navbar_buttons">
-            <button type="button" id="report">Report Piracy</button>
-            <button type="button" id="contact">Contact us</button>
+            <button type="button" class="fast__button_report"><span class="fast__button_text">Report Piracy</span></button>
+            <button type="button" class="fast__button_contact"><span class="fast__button_text">Contact Us</span></button>
+        </div>
+        <div class="fast__navbar_menu">
+            <p><a href="#about">About Us</a></p>
+            <p><a href="#membership">Membership</a></p>
+            <p><a href="#legal">Legal</a></p>
+            <p><a href="#news">News</a></p>
+            <p><a href="#report">Report</a></p>
+            <p><a href="#contact">Contact</a></p>
         </div>
     </div>
     <div class="fast__header">
-        <h1>Federation Against Software Theft</h1>
-        <h2>Promoting the legal use of software</h2>
+        <div class="fast__header_container">
+            <h1>Federation Against Software Theft</h1>
+            <h2>Promoting the legal use of software</h2>
+            <div class="fast__header_buttons">
+                <button type="button" id="discover"><span class="fast__button_text">Discover more</span></button>
+                <button type="button" id="member"><span class="fast__button_text">Become a member</span></button>
+            </div>
+        </div>
+        <div class="fast__header_logo">
+            <img src="./assets/imgs/watermark.png" alt="watermak">
+        </div>
+    </div>
+    <div class="fast__welcome">
+        <div class="fast__welcome_container">
+            <span class="fast__welcome_bar"></span>
+            <h1>Welcome to FAST</h1>
+            <h2>Intellectual Property is more important than ever.</h2>
+            <p>For over four decades, the Federation Against Software Theft, (FAST) has been a global champion of the professional management of legitimate software. As the software industry has evolved into a SaaS based model so has the role of FAST. Today, FAST legal and advisory services to both legal professionals and ambitious growing software companies who value and wish to protect their intellectual property (IP). </p>
+        </div>
+    </div>
+    <div class="fast__cards_section">
+        <span class="fast__cards_bottom_background"></span>
+        <div class="fast__cards">
+            <div class="fast__card" id="cards__membership">
+                <div class="fast__card_top">
+                </div>
+                <div class="fast__card_bottom">
+                    <div class="fast__card_bottom-heading">
+                        <p>FAST Membership</p>
+                    </div>
+                    <div class="fast__card_bottom-content">
+                        <p> Membership of the Federation provides a wide range of benefits to all areas of the software industry including publishers, developers and resellers. Members are able to publicise their...</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fast__card" id="cards__report">
+                <div class="fast__card_top">
+                </div>
+                <div class="fast__card_bottom">
+                    <div class="fast__card_bottom-heading">
+                        <p>Report Piracy</p>
+                    </div>
+                    <div class="fast__card_bottom-content">
+                        <p> If you know of a company using software illegally you can report them in complete confidence.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fast__card" id="cards__legal">
+                <div class="fast__card_top">
+                </div>
+                <div class="fast__card_bottom">
+                    <div class="fast__card_bottom-heading">
+                        <p>FAST Legal Advisory Group</p>
+                    </div>
+                    <div class="fast__card_bottom-content">
+                        <p>  FLAG members are a community of highly respected international legal firms who offer a forum and legal community for Intellectual Property debates and issues, as well as trusted advisors and an escalation route to FAST members on legal issues.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fast__gradient_wrapper">
+        <div class="fast__news">
+            <div class="fast__news_container">
+                <span class="fast__welcome_bar"></span>
+                <h1>Latest News</h1>
+            </div>
+        </div>
+        
+        <div class="fast__news_slide">
+            <div class="fast__news-slide-container swiper">
+                <div class="fast__slide-content">
+                    <div class="fast__card_wrapper swiper-wrapper">
+                        <div class="fast__card swiper-slide" id="news_1">
+                            <div class="fast__card_top"></div>
+                            <div class="fast__card_bottom">
+                                <div class="fast__card_bottom-heading">
+                                    <p>The legal importance of IP for small and medium-sized businesses within the UK</p>
+                                </div>
+                                <div class="fast__card_bottom-content">
+                                    <p>  Hana Hassanbek – Brandsmiths  Background Protecting Intellectual Property (IP) is one of the most valuable assets for any business. IP protection is vital for growth…</p>
+                                </div>
+                            </div>
+                            <div class="fast__read_more">
+                                <a href="#">Read more</a>
+                            </div>
+                        </div>
+        
+                        <div class="fast__card swiper-slide" id="news_2">
+                            <div class="fast__card_top"></div>
+                            <div class="fast__card_bottom">
+                                <div class="fast__card_bottom-heading">
+                                    <p>FAST join the Parliamentary Internet, Communications and Technology Forum</p>
+                                </div>
+                                <div class="fast__card_bottom-content">
+                                    <p>  One of our aims at FAST is to strengthen the rights of Software owners. As part of that vision we are making new steps to get in front of parliamentarians, influencers and policy makers to help our members have a say in new initiatives and potential regulation.</p>
+                                </div>
+                            </div>
+                            <div class="fast__read_more">
+                                <a href="#">Read more</a>
+                            </div>
+                        </div>
+        
+                        <div class="fast__card swiper-slide" id="news_3">
+                            <div class="fast__card_top"></div>
+                            <div class="fast__card_bottom">
+                                <div class="fast__card_bottom-heading">
+                                    <p>MHA Corporate Finance Team advises leading IT services provider Bechtle AG on acquisition of Tangible Benefit UK</p>
+                                </div>
+                                <div class="fast__card_bottom-content">
+                                    <p>  Bechtle AG, one of Europe’s leading IT service providers, has agreed a deal to acquire London-based Tangible Benefit. Tangible Benefit is a well-known name in the…</p>
+                                </div>
+                            </div>
+                            <div class="fast__read_more">
+                                <a href="#">Read more</a>
+                            </div>
+                        </div>
+    
+                        <div class="fast__card swiper-slide" id="news_4">
+                            <div class="fast__card_top"></div>
+                            <div class="fast__card_bottom">
+                                <div class="fast__card_bottom-heading">
+                                    <p>FAST join the Parliamentary Internet, Communications and Technology Forum</p>
+                                </div>
+                                <div class="fast__card_bottom-content">
+                                    <p>  One of our aims at FAST is to strengthen the rights of Software owners. As part of that vision we are making new steps to get in front of parliamentarians, influencers and policy makers to help our members have a say in new initiatives and potential regulation.</p>
+                                </div>
+                            </div>
+                            <div class="fast__read_more">
+                                <a href="#">Read more</a>
+                            </div>
+                        </div>
+    
+                        <div class="fast__card swiper-slide" id="news_5">
+                            <div class="fast__card_top"></div>
+                            <div class="fast__card_bottom">
+                                <div class="fast__card_bottom-heading">
+                                    <p>MHA Corporate Finance Team advises leading IT services provider Bechtle AG on acquisition of Tangible Benefit UK</p>
+                                </div>
+                                <div class="fast__card_bottom-content">
+                                    <p>  Bechtle AG, one of Europe’s leading IT service providers, has agreed a deal to acquire London-based Tangible Benefit. Tangible Benefit is a well-known name in the…</p>
+                                </div>
+                            </div>
+                            <div class="fast__read_more">
+                                <a href="#">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-button-pagination"></div>
+            </div>
+        </div>
+        <div class="fast__discover_button">
+            <div class="fast__discover_container">
+                <div class="fast__discover_positioner">
+                    <button type="button" class="fast__button_report"><span class="fast__button_text">Discover more</span></button>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="fast__footer">
+        <div class="fast__footer_text_wrapper">
+            <div class="fast__footer_address">
+                <p>FAST, 50 Station Road, Amersham, Bucks, HP7 0BD<br><span class="phone-number">+44 (0)1628 640060</span></p>
+            </div>
+            <div class="fast__footer_text_links">
+                <ul class="fast__footer_link_container">
+                    <li class="fast__footer_link">Terms & Conditions</li>
+                    <li class="fast__footer_link">Privacy Policy</li>
+                    <li class="fast__footer_link">Site Map</li>
+                    <li class="fast__footer_link">Contact Us</li>
+                </ul>
+            </div>
+            <div class="fast__footer_social-media-container">
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-facebook"></a>
+            </div>
+        </div>
+        <div class="fast__footer_logo">
+            <div class="fast__footer_logo-container">
+                <img src="./assets/imgs/logo_ondark_600.png" alt="logo">
+            </div>
+        </div>
+    </div>
+    <div class="fast__footer_copyright">
+        <div class="fast__footer_copyright-container">
+            <p>©2023 The Federation Against Software Theft. Company No. 01821298 - VAT No. 404563570</p>
+        </div>
     </div>
 </body>
 </html>

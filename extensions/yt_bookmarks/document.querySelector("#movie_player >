@@ -1,0 +1,1 @@
+document.querySelector("#movie_player > div.ytp-chrome-bottom > div.ytp-progress-bar-container > div.ytp-progress-bar > div.ytp-timed-markers-container")

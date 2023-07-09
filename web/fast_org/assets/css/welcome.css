@@ -1,0 +1,66 @@
+.fast__welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fast__welcome_container {
+    max-width: 1120px;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+
+    text-align: center;
+    font-family: var(--font-family);
+
+    padding: 48px 0px;
+}
+
+.fast__welcome_bar {
+    height: 4px;
+    width: 84px;
+    background-color: #ee1920;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.fast__welcome_container h1 {
+    font-weight: 500;
+    font-size: 42px;
+    color: #08121c;
+}
+
+.fast__welcome_container h2 {
+    font-weight: 700;
+    font-size: 21px;
+    color: #08121c;
+    line-height: 1.15;
+}
+
+.fast__welcome_container p {
+    font-weight: 500;
+    font-size: 15px;
+    color: #525557;
+    line-height: 1.6;
+}
+
+@media (max-width: 850px) {
+    .fast__welcome_container {
+        width: 85%;
+    }
+}
+
+@media (max-width: 700px) {
+    .fast__welcome_container h1 {
+        font-size: 34px;
+    }
+    .fast__welcome_container h2 {
+        font-size: 18px;
+    }
+    .fast__welcome_container p {
+        font-size: 14px;
+    }
+}

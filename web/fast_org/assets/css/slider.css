@@ -1,0 +1,123 @@
+.fast__news_slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #EFEFEF; */
+    text-align: left;
+    min-width: 355px;
+}
+
+.fast__news-slide-container {
+    font-family: var(--font-family);
+    max-width: 1120px;
+    width: 100%;
+    padding: 40px 0;
+}
+
+.fast__slide-content {
+    margin: 0 40px;
+    padding: 45px 20px;
+    overflow: hidden;
+    /* border-radius: 25px; */
+}
+
+.fast__card_wrapper .fast__card {
+    min-width: 200px;
+    width: 315px;
+    height: 500px;
+    background-color: white;
+    box-shadow: 0 0 2px 0 #b1afaf;
+}
+
+.fast__card_wrapper .fast__card:hover {
+    cursor: default;
+}
+
+.fast__card_wrapper .fast__card .fast__card_top {
+    height: 120px;
+}
+
+.fast__card_wrapper .fast__card .fast__card_bottom .fast__card_bottom-heading p {
+    font-size: 21px;
+    color: #08121c;
+    font-weight: 500;
+    line-height: 1.15;
+}
+
+.fast__card_wrapper .fast__card .fast__card_bottom .fast__card_bottom-content p {
+    color: #525557;
+    line-height: 1.5;
+    font-size: 15px;
+}
+
+.fast__card_wrapper .fast__card .fast__card_top:hover,
+.fast__card_wrapper .fast__card .fast__card_bottom .fast__card_bottom-heading:hover {
+    cursor: pointer;
+}
+
+.fast__card_wrapper .fast__card:hover > .fast__card_top {
+    background-size: 105% auto;
+    filter: brightness(90%);
+}
+
+#news_1 .fast__card_top {
+    background-image: url('../imgs/5-1024x576.jpg');
+}
+
+#news_2 .fast__card_top {
+    background-image: url('../imgs/img_10_portrait-768x1024.jpg');
+}
+
+#news_3 .fast__card_top {
+    background-image: url('../imgs/fast-1024x683.jpg');
+}
+
+#news_4 .fast__card_top {
+    background-image: url('../imgs/6-1024x576.jpg');
+}
+
+#news_5 .fast__card_top {
+    background-image: url('../imgs/8-1024x576.jpg');
+}
+
+.swiper-navBtn {
+    color: #5f5f5f !important;
+}
+
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+    font-size: 28px !important;
+    font-weight: 700;
+}
+
+.swiper-navBtn:hover {
+    color: rgb(255, 41, 41) !important;
+}
+
+.fast__card_wrapper .fast__card .fast__read_more {
+    position: absolute;
+    bottom: 30px;
+    right: 28px;
+}
+
+.fast__card_wrapper .fast__card .fast__read_more a {
+    text-decoration: none;
+    color: #ee1920;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+@media (max-width: 420px) {
+    .fast__slide-content {
+        margin: 0 24px;
+    }
+}
+
+@media (max-width: 385px) {
+    .fast__card_wrapper .fast__card .fast__card_top {
+        height: 82px;
+    }
+    .fast__card_wrapper .fast__card .fast__read_more {
+        bottom: 15px;
+    }
+}

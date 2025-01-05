@@ -65,8 +65,6 @@ for (let i = 0; i < sgGradeValues.length; i++) {
 
             semToGrade[sem] += numericalGrade * credit;
             semToCredits[sem] += credit;
-        } else {
-            console.error(`Unrecognized grade: ${grade}`);
         }
     }
 }
